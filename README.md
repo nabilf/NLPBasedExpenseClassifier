@@ -1,4 +1,5 @@
-
+## Description
+This is a relatively small exercise in developing an ML application using Python.
 
 Application reads provided comma separated files `training_data_example.csv`, `validation_data_example.csv` and `employee.csv` are included in this repo, for the sake of example, in order to address the common problem of mixing of personal and business expenses in a small business.  The algorithm is intended to separate any potential personal expenses in the training data.  Labels of personal and business expenses were deliberately not given as this is often the case in many systems.
 
