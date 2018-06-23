@@ -14,10 +14,10 @@ The objective therefore is to train a learning model that assigns each expense t
 
 ## How-to
 There are 4 .py files independent of each other, so you may run them separately in any order you wish: 
-1. `main.py` is the code that implements the main task, namely a sample of an ML miniapp that implements Q1 in your challenge.
-2. `feature_selection.py` is an exercise that shows why I chose the features to use in Q1.
-3. `expense_type_algo.py` is a possible solution for Q2, and.It uses a variant of the csv files you provided with some          	    additional info I put in manually based on some assumptions, which I will explain if you want to go further and meet with 		    me.
-4. `mainWcluster.py` Is my attempt to solve Q3. It is quite basic, as I am not overly familiar with IPython and I had trouble getting 	     python distributed tools like PySPARK on my laptop. It is essentially the same code as in Q1, but running in an ippyparallel client     block.
+1. `main.py` is the code that implements the main task.
+2. `feature_selection.py` is an exercise that shows why I chose the features to use.
+3. `expense_type_algo.py` is a possible solution for this ML problem, and.It uses a variant of the csv files  provided with some          	    additional info I put in manually based on some assumptions.
+4. `mainWcluster.py` is a simple example of distributed computing using IPython.
 
 ## What algorithms and why
 
@@ -30,6 +30,8 @@ A promising possible supplement to this algorithm is to factor in employees(i.e.
 
 Running the code produces a metrics matrix csv file detailing performance. Prediction is around 89 percent accurate using `Gradient Boost`, however `SVM SVC` achieves similar results and would be more efficient and significantly faster . Out of curiousity I applied a `Random Forest` ensemble and managed to achieve over 97 percent accuracy, but again the dataset is just much too small for more complex algorithms.
 
-## What's missing?
+## Currently working on
 
-In order for this to be evaluated for realistic implementation, it needs testing with a larger dataset in a distributed environment (The intention is to use SPARK). Code and data connection additions/modifications would be needed accordingly.
+More data in order to evaluate necessary preprocessing (Normalization Vs. Standardization, what dimension reduction is needed, etc.) in a real-life implementation.
+
+Testing with the larger dataset in a distributed environment (The intention is to use SPARK). Code and data connection additions/modifications would be needed accordingly.
